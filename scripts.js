@@ -14,6 +14,9 @@ const tbody = document.querySelector('tbody')
 const tr = document.querySelector('template').content.querySelector('tr')
 
 const showEmployees = (employeeList = employees) => {
+  // Clear out existing employees
+  tbody.innerHTML = ''
+
   // Destructure renaming - https://wesbos.com/destructuring-renaming
   employeeList.forEach((employee) => {
     // Clone a 'tr' for each 'employee'
