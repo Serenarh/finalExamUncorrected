@@ -19,7 +19,6 @@ const showEmployees = (employeeList = employees) => {
   // Clear out existing employees
   tbody.innerHTML = ''
 
-  // Destructure renaming - https://wesbos.com/destructuring-renaming
   employeeList.forEach((employee) => {
     // Clone a 'tr' for each 'employee'
     const trClone = tr.cloneNode()
