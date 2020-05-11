@@ -45,12 +45,12 @@ addEmployeeForm.addEventListener('submit', e => {
  * 1. Get 'values' from 'name', 'salary', 'dob'.
  * (HINT: VARIABLES already created 👆🏽)
  *
- * 2. Convert 'dob' 'value' into an actual age
- *
- * 3. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'.
+ * 3. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'. 'employee_age' can be just the DOB instead of an actual age 🙆🏽‍♂️
  *
  * 4. 'employees.push' your new 'employee object'
  * (HINT: yes, you will be MUTATING 'employees' 🙆🏽‍♂️)
+ *
+ * BONUS 🍄: Get the 'real age' of the person from the 'dob.value' b4 adding.
  */
 
   /**
@@ -67,10 +67,17 @@ salaryFilterForm.addEventListener('submit', e => {
 
   /**
  * TODO:
- * 1. Collect 'value' from '#salary-filter'
- * (HINT: 'salaryFilterForm.querySelector')
+ * 1. Collect 'value' from 'salaryFilter' (VARIABLE already created 👆🏽))
+ * 2. Write a 'filter' to only RETURN 'employees' whose 'employee_salary' >= the 'value' you collected 👆🏽.
+ * (HINT: 'employee_salary' is a STRING.
+ * salaryFilter.value will also be a STRING.
+ * Use 'Number.parseInt' to do a meaningful comparison -
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt)
  *
- * 2. Write a 'filter' to only RETURN 'employees' whose 'employee_salary' >= the 'value' you collected 👆🏽. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees)
+ * 3. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees).
+ *
+ * BONUS 🍄: DESTRUCTURE 'employee_salary' and rename it as 'employeeSalary'
+ * https://wesbos.com/destructuring-renaming
  */
 
   // TODO: Pass 'filteredEmployees' (or whatever VARIABLE name you chose) to update the table 👇🏽
