@@ -2,7 +2,7 @@
 
 ## Girections
 
-1. **DO NOT** touch the HTML.
+1. **DO NOT** touch the HTML or starting JS code (do remove all comments that I wrote as you go through).
 
 2. All other girections are in 'scripts.js'
 
