@@ -27,8 +27,12 @@ input {
   padding: 3px;
 }
 
-form {
+form,
+tr {
   border-bottom: solid thin black;
+}
+
+form {
   margin: 1rem 0;
   padding-bottom: 1rem;
 }
@@ -54,6 +58,10 @@ table {
   margin: 0.5rem 0;
   padding: 0.5rem 0;
   width: 550px;
+}
+
+tr {
+  padding: 0.25rem 0;
 }
 
 #filter-min-salary {
