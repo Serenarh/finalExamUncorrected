@@ -5,34 +5,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employees (Final Exam)</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <h1>Employees</h1>
 
     <form action="#">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" />
+      <div class="flex flex--justify-content-space-between">
+        <div>
+          <label for="name" class="screen-reader-text">Name</label>
+          <input type="text" id="name" placeholder="Name" />
+        </div>
+
+        <div>
+          <label for="salary" class="screen-reader-text">Salary</label>
+          <input type="number" id="salary" placeholder="Salary" />
+        </div>
+
+        <div>
+          <label for="dob" class="screen-reader-text">DOB</label>
+          <input type="date" placeholder="DOB" />
+        </div>
+
+        <div>
+          <label for="profileImage" class="screen-reader-text">Image URL</label>
+          <input type="text" id="url" placeholder="Image URL" />
+        </div>
       </div>
 
-      <div>
-        <label for="salary">Salary</label>
-        <input type="number" id="salary" placeholder="Salary" />
-      </div>
-
-      <div>
-        <label for="dob">DOB</label>
-        <input type="date" placeholder="DOB" />
-      </div>
-
-      <div>
-        <label for="profileImage">Image URL</label>
-        <input type="text" id="url" placeholder="Image URL" />
-      </div>
-
-      <button type="submit"></button>
+      <button type="submit">Add Employee</button>
     </form>
+
+    <div class="flex flex--justify-content-space-between">
+      <button id="show-all">Show All Employees</button>
+
+      <div id="min-salary-container">
+        <label for="salary-filter">Enter Minimum Salary Filter</label>
+        <input type="text" id="salary-filter" />
+        <button id="filter-min-salary">Go!</button>
+      </div>
+    </div>
 
     <script src="./scripts.js" type="module"></script>
   </body>
