@@ -1,8 +1,8 @@
 {
-  "name": "js-starter",
+  "name": "final-exam",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "serve": "browser-sync start --server --files '*.html, *.css, *.js'"
   },
