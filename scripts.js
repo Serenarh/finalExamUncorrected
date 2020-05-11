@@ -6,6 +6,9 @@ import employees from './employees.js'
 import { getTdsFromData } from './utils/index.js'
 
 const addEmployeeForm = document.querySelector('#add-employee')
+const name = addEmployeeForm.querySelector('#name')
+const salary = addEmployeeForm.querySelector('#salary')
+const dob = addEmployeeForm.querySelector('#dob')
 const salaryFilterForm = document.querySelector('#salary-filter-form')
 const tbody = document.querySelector('tbody')
 const tr = document.querySelector('template').content.querySelector('tr')
@@ -34,11 +37,14 @@ addEmployeeForm.addEventListener('submit', e => {
 
   /**
  * TODO:
- * 1. Collect all relevant 'form' 'input' 'values' (check the HTML)
- * (HINT: 'addEmployeeForm.querySelector')
+ * 1. Get 'values' from 'name', 'salary', 'dob'.
+ * (HINT: VARIABLES already created 👆🏽)
  *
- * 2. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'. 'employee_age' VALUE should be calculated based on DOB.
- * 3. 'employees.push' your new 'employee object'
+ * 2. Convert 'dob' 'value' into an actual age
+ *
+ * 3. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'.
+ *
+ * 4. 'employees.push' your new 'employee object'
  * (HINT: yes, you will be MUTATING 'employees' 🙆🏽‍♂️)
  */
 
