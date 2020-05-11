@@ -13,6 +13,8 @@ const salaryFilterForm = document.querySelector('#salary-filter-form')
 const tbody = document.querySelector('tbody')
 const tr = document.querySelector('template').content.querySelector('tr')
 
+const salaryFilter = salaryFilterForm.querySelector('#salary-filter')
+
 const showEmployees = (employeeList = employees) => {
   // Clear out existing employees
   tbody.innerHTML = ''
