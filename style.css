@@ -22,7 +22,9 @@ th {
 }
 
 input {
+  border: solid thin black;
   margin-bottom: 0.5rem;
+  padding: 3px;
 }
 
 form {
@@ -34,11 +36,6 @@ form {
 input,
 button {
   border-radius: 3px;
-}
-
-input {
-  border: solid thin black;
-  padding: 3px;
 }
 
 button[type="submit"] {
