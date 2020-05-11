@@ -5,12 +5,14 @@
 import employees from './employees.js'
 import { getTdsFromData } from './utils/index.js'
 
+const addEmployeeForm = document.querySelector('#add-employee')
+const salaryFilterForm = document.querySelector('#salary-filter-form')
 const tbody = document.querySelector('tbody')
 const tr = document.querySelector('template').content.querySelector('tr')
 
-const showEmployees = () => {
+const showEmployees = (employeeList = employees) => {
   // Destructure renaming - https://wesbos.com/destructuring-renaming
-  employees.forEach((employee) => {
+  employeeList.forEach((employee) => {
     // Clone a 'tr' for each 'employee'
     const trClone = tr.cloneNode()
 
@@ -25,3 +27,41 @@ const showEmployees = () => {
 }
 
 showEmployees()
+
+// TODO: Do all coding below this line (and remove this comment, of course).
+addEmployeeForm.addEventListener('submit', e => {
+  e.preventDefault()
+
+  /**
+ * TODO:
+ * 1. Collect all relevant 'form' 'input' 'values' (check the HTML)
+ * (HINT: 'addEmployeeForm.querySelector')
+ *
+ * 2. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'. 'employee_age' VALUE should be calculated based on DOB.
+ * 3. 'employees.push' your new 'employee object'
+ * (HINT: yes, you will be MUTATING 'employees' 🙆🏽‍♂️)
+ */
+
+  /**
+   * DO NOT remove this FUNCTION INVOCATION 🛑
+   * It will reload the table for you and
+   * you should see your new entry in the 'table'
+   * if you have done things correctly.
+   */
+  showEmployees()
+})
+
+salaryFilterForm.addEventListener('submit', e => {
+  e.preventDefault()
+
+  /**
+ * TODO:
+ * 1. Collect 'value' from '#salary-filter'
+ * (HINT: 'salaryFilterForm.querySelector')
+ *
+ * 2. Write a 'filter' to only RETURN 'employees' whose 'employee_salary' >= the 'value' you collected 👆🏽. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees)
+ */
+
+  // TODO: Pass 'filteredEmployees' (or whatever VARIABLE name you chose) to update the table 👇🏽
+  showEmployees()
+})
