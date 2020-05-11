@@ -64,6 +64,15 @@ tr {
   padding: 0.25rem 0;
 }
 
+td {
+  padding: 0 0.25rem;
+  width: 33.3%;
+}
+
+td:last-child {
+  width: auto;
+}
+
 #filter-min-salary {
   background-color: orange;
   border-radius: 50%;
