@@ -1,14 +1,22 @@
-# Front End Starter
+# Final Exam
 
-## Overview
+## Girections
 
-This template repository contains several opinionated, 'starter' files and settings to help students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
+1. **DO NOT** touch the HTML.
 
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
+2. All other girections are in 'scripts.js'
 
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+## Grading
+
+### 50 Points Total
+
+You will be graded on:
+
+1. Overall code quality and functionality. Use of ‘ES2015+’ syntax, `=>`, _destructuring_ and _default parameter values._ **If you try to copy code that you don’t understand, and do stuff like have `var`s in your code, I will immediately take at least 10 points off of the top.**
+
+2. Quality of your `commit`s. Generally, you should have 1 `commit` as a minimum for every ‘girection’ (e.g. TODO). Many times, you can literally cut/paste my TODO as your commit message.
+
+3. Quality of your comments to show that you understand what the code is doing. Again, you are not writing an essay - although, you may create a separate write up in a ‘long form’ document to show what you do understand, especially if you can’t get your code done and working (Slack DM this as a separate document - unless YK how to write MD files) - but do sprinkle in a sentence here or there to explain what you are doing. **Do not leave any of my comments in the code.**
 
 ## Get Started
 
@@ -19,5 +27,3 @@ After establishing your directory structure on your local machine, (e.g. '~/Code
 Once this repo has been created on your GitHub, you can click on the button to `clone` it as usual. Once it's `clone`d to your local machine, kindly `cd` into the directory and **be sure to do:** `npm i` to build out 'node_modules'. This will provide you with some helpful tooling and linting.
 
 Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom right of your screen). You should install these. 👍🏾
-
-Update this README and make any other initial changes or 🌱 files, etc. To help you do that, here's a [Markdown Guide](https://www.notion.so/codefinity/MarkDown-Guide-3c7aecdc1327437e9785cb9c1d277f42)
