@@ -32,11 +32,6 @@
           <label for="dob" class="screen-reader-text">DOB</label>
           <input type="date" placeholder="DOB" />
         </div>
-
-        <div>
-          <label for="profileImage" class="screen-reader-text">Image URL</label>
-          <input type="text" id="url" placeholder="Image URL" />
-        </div>
       </div>
 
       <button type="submit">Add Employee</button>
@@ -51,6 +46,18 @@
         <button id="filter-min-salary">Go!</button>
       </div>
     </div>
+
+    <table id="employees">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Salary</td>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- existing data could optionally be included here -->
+      </tbody>
+    </table>
 
     <script src="./scripts.js" type="module"></script>
   </body>
