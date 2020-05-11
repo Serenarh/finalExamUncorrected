@@ -6,6 +6,8 @@
 
 2. All other girections are in 'scripts.js'
 
+3. This is a **solo** coding assignment. If you do get any help from someone, be sure to mention them in a comment to make it clear what they helped you with.
+
 ## Grading
 
 ### 50 Points Total
