@@ -52,7 +52,9 @@ salaryFilterForm.addEventListener('submit', e => {
 
   const minSalary = salaryFilter.value // hold value entered for salary filter
 
+  // filtered employees put in minSalEmps
   const minSalEmps = employees.filter(employee => Number.parseInt(employee.employee_salary, 10) >= Number.parseInt(minSalary, 10))
+
   /* 3. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees).
   */
 
