@@ -52,14 +52,7 @@ salaryFilterForm.addEventListener('submit', e => {
 
   const minSalary = salaryFilter.value // hold value entered for salary filter
 
-  /*
- * 2. Write a 'filter' to only RETURN 'employees' whose 'employee_salary' >= the 'value' you collected 👆🏽.
- * (HINT: 'employee_salary' is a STRING.
- * salaryFilter.value will also be a STRING.
- * Use 'Number.parseInt' to do a meaningful comparison -
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt)
- */
-
+  const minSalEmps = employees.filter(employee => Number.parseInt(employee.employee_salary, 10) >= Number.parseInt(minSalary, 10))
   /* 3. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees).
   */
 
