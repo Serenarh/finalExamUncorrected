@@ -57,7 +57,5 @@ salaryFilterForm.addEventListener('submit', e => {
 
   const filteredEmployees = minSalEmps // new array of employees assigned to new variable
 
-  // TODO: Pass 'filteredEmployees' (or whatever VARIABLE name you chose) to update the table 👇🏽
-
-  showEmployees()
+  showEmployees(filteredEmployees) // populate table with data from filteredEmployees
 })
