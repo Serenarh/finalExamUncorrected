@@ -55,8 +55,7 @@ salaryFilterForm.addEventListener('submit', e => {
   // filtered employees put in minSalEmps
   const minSalEmps = employees.filter(employee => Number.parseInt(employee.employee_salary, 10) >= Number.parseInt(minSalary, 10))
 
-  /* 3. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees).
-  */
+  const filteredEmployees = minSalEmps // new array of employees assigned to new variable
 
   // TODO: Pass 'filteredEmployees' (or whatever VARIABLE name you chose) to update the table 👇🏽
 
