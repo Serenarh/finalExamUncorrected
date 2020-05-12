@@ -43,19 +43,8 @@ addEmployeeForm.addEventListener('submit', e => {
 
   const employee = { id: employees.length + 1, employee_name: name2, employee_salary: salary2, employee_age: dob2 }
 
-  /* 4. 'employees.push' your new 'employee object'
- * (HINT: yes, you will be MUTATING 'employees' 🙆🏽‍♂️)
- */
+  employees.push(employee)
 
-  /* BONUS 🍄: Get the 'real age' of the person from the 'dob.value' b4 adding.
- */
-
-  /**
-   * DO NOT remove this FUNCTION INVOCATION 🛑
-   * It will reload the table for you and
-   * you should see your new entry in the 'table'
-   * if you have done things correctly.
-   */
   showEmployees()
 })
 
