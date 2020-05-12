@@ -41,8 +41,7 @@ addEmployeeForm.addEventListener('submit', e => {
   const salary2 = salary.value
   const dob2 = dob.value
 
-  /* 3. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'. 'employee_age' can be just the DOB instead of an actual age 🙆🏽‍♂️
- */
+  const employee = { id: employees.length + 1, employee_name: name2, employee_salary: salary2, employee_age: dob2 }
 
   /* 4. 'employees.push' your new 'employee object'
  * (HINT: yes, you will be MUTATING 'employees' 🙆🏽‍♂️)
