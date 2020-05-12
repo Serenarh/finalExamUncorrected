@@ -1,5 +1,3 @@
-// DO NOT edit any existing code. 🛑
-
 // Browser 'modules' must specify exact files and extensions 😞
 import employees from './employees.js'
 import { getTdsFromData } from './utils/index.js'
@@ -37,13 +35,14 @@ showEmployees()
 addEmployeeForm.addEventListener('submit', e => {
   e.preventDefault()
 
-  const name2 = name.value
-  const salary2 = salary.value
-  const dob2 = dob.value
+  const name2 = name.value // hold value entered for name
+  const salary2 = salary.value // hold value entered for salary
+  const dob2 = dob.value // hold value entered for dob
 
+  // create an employee object
   const employee = { id: employees.length + 1, employee_name: name2, employee_salary: salary2, employee_age: dob2 }
 
-  employees.push(employee)
+  employees.push(employee) // push employee object into employees
 
   showEmployees()
 })
@@ -54,15 +53,19 @@ salaryFilterForm.addEventListener('submit', e => {
   /**
  * TODO:
  * 1. Collect 'value' from 'salaryFilter' (VARIABLE already created 👆🏽))
- *
- *
+ */
+
+  const salaryFilter2 = salaryFilter.value
+
+  /*
  * 2. Write a 'filter' to only RETURN 'employees' whose 'employee_salary' >= the 'value' you collected 👆🏽.
  * (HINT: 'employee_salary' is a STRING.
  * salaryFilter.value will also be a STRING.
  * Use 'Number.parseInt' to do a meaningful comparison -
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt)
- *
- * 3. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees).
+ */
+
+  /* 3. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees).
  *
  * BONUS 🍄: DESTRUCTURE 'employee_salary' and rename it as 'employeeSalary'
  * https://wesbos.com/destructuring-renaming
