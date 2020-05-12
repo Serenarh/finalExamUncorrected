@@ -1,5 +1,4 @@
 // DO NOT edit any existing code. 🛑
-// TODO: Complete all TODOS, making responsible 'commit's.
 
 // Browser 'modules' must specify exact files and extensions 😞
 import employees from './employees.js'
@@ -35,21 +34,21 @@ const showEmployees = (employeeList = employees) => {
 
 showEmployees()
 
-// TODO: Do all coding below this line (and remove this comment, of course).
 addEmployeeForm.addEventListener('submit', e => {
   e.preventDefault()
 
-  /**
- * TODO:
- * 1. Get 'values' from 'name', 'salary', 'dob'.
- * (HINT: VARIABLES already created 👆🏽)
- *
- * 3. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'. 'employee_age' can be just the DOB instead of an actual age 🙆🏽‍♂️
- *
- * 4. 'employees.push' your new 'employee object'
+  const name2 = name.value
+  const salary2 = salary.value
+  const dob2 = dob.value
+
+  /* 3. Create an 'employee object' USING SAME PROPERTIES as seen in 'employees.js'. Just add 1 to 'employees.length' for the VALUE of each 'id'. 'employee_age' can be just the DOB instead of an actual age 🙆🏽‍♂️
+ */
+
+  /* 4. 'employees.push' your new 'employee object'
  * (HINT: yes, you will be MUTATING 'employees' 🙆🏽‍♂️)
- *
- * BONUS 🍄: Get the 'real age' of the person from the 'dob.value' b4 adding.
+ */
+
+  /* BONUS 🍄: Get the 'real age' of the person from the 'dob.value' b4 adding.
  */
 
   /**
@@ -67,6 +66,8 @@ salaryFilterForm.addEventListener('submit', e => {
   /**
  * TODO:
  * 1. Collect 'value' from 'salaryFilter' (VARIABLE already created 👆🏽))
+ *
+ *
  * 2. Write a 'filter' to only RETURN 'employees' whose 'employee_salary' >= the 'value' you collected 👆🏽.
  * (HINT: 'employee_salary' is a STRING.
  * salaryFilter.value will also be a STRING.
