@@ -50,12 +50,7 @@ addEmployeeForm.addEventListener('submit', e => {
 salaryFilterForm.addEventListener('submit', e => {
   e.preventDefault()
 
-  /**
- * TODO:
- * 1. Collect 'value' from 'salaryFilter' (VARIABLE already created 👆🏽))
- */
-
-  const salaryFilter2 = salaryFilter.value
+  const minSalary = salaryFilter.value // hold value entered for salary filter
 
   /*
  * 2. Write a 'filter' to only RETURN 'employees' whose 'employee_salary' >= the 'value' you collected 👆🏽.
@@ -66,11 +61,9 @@ salaryFilterForm.addEventListener('submit', e => {
  */
 
   /* 3. Assign this new ARRAY to a new VARIABLE (e.g. 'filteredEmployees).
- *
- * BONUS 🍄: DESTRUCTURE 'employee_salary' and rename it as 'employeeSalary'
- * https://wesbos.com/destructuring-renaming
- */
+  */
 
   // TODO: Pass 'filteredEmployees' (or whatever VARIABLE name you chose) to update the table 👇🏽
+
   showEmployees()
 })
